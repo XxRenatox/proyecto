@@ -2,12 +2,12 @@ import { estructuraHTML} from "./estructuras.js";
 
 const datos = [
     {
-        "img": "../images/logo.jpg",
+        "img": "https://via.placeholder.com/150?text=Imagen+3",
         "titulo": "Título de Ejemplo 1",
         "descripcion": "Descripción de ejemplo para la primera tarjeta. Este texto sirve como un resumen breve de la información presentada."
     },
     {
-        "img": "../images/logo.jpg",
+        "img": "https://via.placeholder.com/150?text=Imagen+3",
         "titulo": "Título de Ejemplo 2",
         "descripcion": "Descripción de ejemplo para la segunda tarjeta. Este texto proporciona más detalles sobre el contenido de la tarjeta."
     },
@@ -17,7 +17,7 @@ const datos = [
         "descripcion": "Descripción de ejemplo para la tercera tarjeta. Aquí puedes añadir información adicional o contexto relevante."
     },
     {
-        "img": "../images/logo.jpg",
+        "img": "https://via.placeholder.com/150?text=Imagen+3",
         "titulo": "Título de Ejemplo 4",
         "descripcion": "Descripción de ejemplo para la cuarta tarjeta. Esta descripción puede incluir detalles adicionales sobre el tema presentado."
     },

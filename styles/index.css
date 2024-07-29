@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 
-.shadow-pop-bl{animation:shadow-pop-bl .7s cubic-bezier(.47,0.000,.745,.715) both}
+.shadow-pop-bl{animation:shadow-pop-bl 1s cubic-bezier(.47,0.000,.745,.715) both}
 
 @keyframes shadow-pop-bl{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:-1px 1px #3e3e3e,-2px 2px #3e3e3e,-3px 3px #3e3e3e,-4px 4px #3e3e3e,-5px 5px #3e3e3e,-6px 6px #3e3e3e,-7px 7px #3e3e3e,-8px 8px #3e3e3e;transform:translateX(8px) translateY(-8px)}}
 
@@ -141,7 +141,7 @@ body {
 .container-transform {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 2s, transform 1s;
 }
 
 .container-transform.show {
