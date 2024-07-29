@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.shadow-pop-bl{animation:shadow-pop-bl .7s cubic-bezier(.47,0.000,.745,.715) both}
+
+@keyframes shadow-pop-bl{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:-1px 1px #3e3e3e,-2px 2px #3e3e3e,-3px 3px #3e3e3e,-4px 4px #3e3e3e,-5px 5px #3e3e3e,-6px 6px #3e3e3e,-7px 7px #3e3e3e,-8px 8px #3e3e3e;transform:translateX(8px) translateY(-8px)}}
+
+.card-img-top {
+    transition: all 0.3s ease;
+}
+
+.card.expanded .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    transition: opacity 0.3s ease;
+}
+
+.card.expanded .card-text {
+    display: block;
+    opacity: 0;
+}
+
+.card .card-text {
+    display: block;
+    opacity: 1;
+}
+
+.card.expanded .more-text {
+    display: block;
+    opacity: 1;
+}
+
+.card .more-text {
+    display: none;
+    opacity: 0;
+}
+
+.card.expanded {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.img-logo {
+    width: 90px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #900c3f !important;
+}
+
+.hero {
+    height: 100vh;
+    background: url("https://www.example.com/tu-imagen.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, #000000, #6d0f0f);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.bg-color {
+    background: linear-gradient(to top, #000000, #6d0f0f);
+}
+
+.container-transform {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.container-transform.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-toggler-icon {
+    color: white;
+    background-image: none; 
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630";
+    font-size: 1.5rem; 
+    color: white; 
+    display: block;
+}
